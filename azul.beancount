@@ -1,0 +1,31 @@
+;;; Option
+option "title" "Empresa A"
+option "name_assets" "Ativo"
+option "name_liabilities" "Passivo"
+option "name_equity" "Capital"
+option "name_income" "Proveitos"
+option "name_expenses" "Gastos"
+option "operating_currency" "EUR"
+;;; Contas
+2025/01/01 open Capital:51CapitalSubscrito EUR
+2025/01/01 open Ativo:12DepósitosÀordem EUR
+2025/01/01 open Ativo:31Compras:311Mercadorias EUR
+2025/01/01 open Ativo:32Mercadorias:321MercadoriasEmArmazém EUR
+2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC  EUR
+  
+;;; Operações
+2025/01/01 *  "Capital"
+    Ativo:12DepósitosÀordem                                  50000 EUR
+    Capital:51CapitalSubscrito
+
+; Compra de mercadorias: bebidas A PRAZO
+
+2025/02/10 * "Compra de bebidas a prazo"
+    Ativo:31Compras:311Mercadorias                              300 EUR
+    Passivo:22Fornecedores:221FornecedoresCC
+ 
+; Transferência para o armazem a preço de custo
+
+2025/02/10 * "transferência para armazém"
+    Ativo:32Mercadorias:321MercadoriasEmArmazém               300 EUR
+    Ativo:31Compras:311Mercadorias
