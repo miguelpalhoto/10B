@@ -1,0 +1,24 @@
+2010-01-01 open Equity:Opening-Balances
+2010-01-01 open Assets:Something
+
+2020-01-01 commodity USD
+  price: "PLN:pricehist.beanprice.yahoo/^PLNUSD=X"
+
+2020-01-01 commodity EUR
+  price: "PLN:pricehist.beanprice.ecb/EUR:PLN"
+
+2020-01-01 commodity PLN
+  price: "EUR:pricehist.beanprice.ecb/PLN:EUR"
+
+2021-01-01 * "Buy a"
+  Equity:Opening-Balances  -25.123 PLN
+  Assets:Something              50 USD @@ 25.123 PLN
+
+2021-01-01 * "Buy b"
+  Equity:Opening-Balances  -10.123 PLN
+  Assets:Something         100.123 EUR @@ 10.123 PLN
+
+2021-01-01 * "Buy c"
+  Equity:Opening-Balances  -10.123 USD
+  Assets:Something         100.123 EUR @@ 10.123 USD
+
