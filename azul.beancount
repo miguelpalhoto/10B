@@ -2,7 +2,7 @@ option "title" "Empresa A"
 option "name_assets" "Ativo"
 option "name_liabilities" "Passivo"
 option "name_equity" "Capital"
-option "name_income" "Proveitos"
+option "name_income" "Rendimentos"
 option "name_expenses" "Gastos"
 option "operating_currency" "EUR"
 
@@ -70,17 +70,17 @@ option "operating_currency" "EUR"
   Passivo:22Fornecedores:221FornecedoresCC                         490 EUR
   Ativo:12DepósitosÀordem
 
-2025/02/17 * "Venda de 3 gelados a 5€ "Compra de mercadoria" 
-   Ativo:11Caixa  15 EUR
-   Rendimentos:71Vendas:711Mercadorias:7111Gelados
-   Gastos:61CustoDasMercadoriasVendidas:611Mercadorias             6 EUR
-   Ativo:32Mercadorias:321Armazém:3212Gelado                      
+2025/02/17 *  "Venda de 3 gelados a 5€" 
+   Ativo:11Caixa                                                   15 EUR
+   Rendimentos:71Vendas:711Mercadorias:7111Gelados                -15 EUR
+   Gastos:61CustoDasMercadoriasVendidas:611Mercadorias              6 EUR
+   Ativo:32Mercadorias:321Armazém:3212Gelado                       -6 EUR
 
 ; Compra Bebida A: 50 unidades a 1,5 cada; a pronto pagamento (8 dias) 
 ; pagamento por transferência bancária.
 ; Desconto de pronto pagamento de 5€
 
-2025/02/17 * "Compra "Compra de bebida A a prazo"
+2025/02/17 * "Compra de bebida A a prazo"
   Ativo:31Compras:311Mercadorias:3111BebidaA   75 EUR
   Ativo:12DepósitosÀordem                     -70 EUR
   Rendimentos:78OutrosRendimentos:782DescontosPP -5 EUR
