@@ -80,7 +80,7 @@ option "operating_currency" "EUR"
 ; pagamento por transferência bancária.
 ; Desconto de pronto pagamento de 5€
 
-2025/02/17 * "Compra de bebida A a prazo"
+2025/02/17 * "Compra de bebida A a pronto pagamento"
   Ativo:31Compras:311Mercadorias:3111BebidaA   75 EUR
   Ativo:12DepósitosÀordem                     -70 EUR
   Rendimentos:78OutrosRendimentos:782DescontosPP -5 EUR
