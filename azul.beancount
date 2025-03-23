@@ -1,10 +1,11 @@
-option "title" "Empresa A"
+option "title" "Empresa 10B"
 option "name_assets" "Ativo"
 option "name_liabilities" "Passivo"
 option "name_equity" "Capital"
 option "name_income" "Rendimentos"
 option "name_expenses" "Gastos"
 option "operating_currency" "EUR"
+
 
 ;;; Comoditties
 2002/01/01 commodity EUR
@@ -28,7 +29,10 @@ option "operating_currency" "EUR"
 2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC  EUR
 2025/01/01 open Gastos:61CustoDasMercadoriasVendidas:611Mercadorias EUR
 2025/01/01 open Rendimentos:71Vendas:711Mercadorias:7111Gelados EUR
+2025/01/01 open Rendimentos:71Vendas:711Mercadorias:7113PoCeramico  EUR
 2025/01/01 open Rendimentos:78OutrosRendimentos:782DescontosPP EUR
+2025/01/01 open Rendimentos:78OutrosRendimentos:7888OutrosNãoEspecificados EUR
+
 
 ;;; Prices
 2025/01/01 price GELADO                                             6 EUR
@@ -89,6 +93,10 @@ option "operating_currency" "EUR"
   Ativo:32Mercadorias:321Armazém:3211BebidaA 75 EUR
   Ativo:31Compras:311Mercadorias:3111BebidaA
 
+2025/02/20 * "Venda de essências, pó cerâmico e portes de envio"
+  Ativo:12DepósitosÀordem                                    32.74 EUR
+  Rendimentos:71Vendas:711Mercadorias:7113PoCeramico        -29.08 EUR
+  Rendimentos:78OutrosRendimentos:7888OutrosNãoEspecificados  -3.66 EUR
 
 
 
